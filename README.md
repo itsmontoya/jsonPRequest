@@ -7,8 +7,11 @@ jsonPRequest is a simple JSONP request manager which takes in a source URL, a ca
 ```js
 var PageController = function(){
 
-	// Will send a JSONP request to '/api/page?callback=jsonPRequest[random number sequence]
-	jsonpRequest('/api/page', load, 'callback');
+	/**
+	 *  Will send a JSONP request to:
+	 *  '/api/page?callback=jsonPRequest[random number sequence]'
+	 */	
+jsonpRequest('/api/page', load, 'callback');
 
 
 	function load(data){
